@@ -1,0 +1,15 @@
+{% extends "base.html" %} {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ news_article.title }}</title>
+  </head>
+  <body>
+    <h1>{{ news_article.title }}</h1>
+    <img src="{{ news_article.image_url }}" alt="{{ news_article.title }}" />
+    <p>{{ news_article.content }}</p>
+  </body>
+</html>

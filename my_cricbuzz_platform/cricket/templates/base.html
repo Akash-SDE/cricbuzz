@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cricbuzz</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-color: #e3f2fd"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">Cricbuzz</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Players</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Teams</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="matchesDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Series
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="matchesDropdown">
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Indian Premier League 2024</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Icc Mens T20 World Cup 2024</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >New Zealand tour of Pakistan, 2024</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >India Women tour of Bangladesh, 2024</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Pakistan tour of Ireland, 2024</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Netherlands T20I Tri-Series, 2024</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="matchesDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                News
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="matchesDropdown">
+                <li><a class="dropdown-item" href="#">All news</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Premium Editorials</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Latest News</a></li>
+                <li><a class="dropdown-item" href="#">Topics</a></li>
+                <li><a class="dropdown-item" href="#">Soptlight</a></li>
+                <li><a class="dropdown-item" href="#">Opinions</a></li>
+                <li><a class="dropdown-item" href="#">Specials</a></li>
+                <li><a class="dropdown-item" href="#">Stats & Analysis</a></li>
+                <li><a class="dropdown-item" href="#">Interviews</a></li>
+                <li><a class="dropdown-item" href="#">Live Blogs</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Videos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="matchesDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                More
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="matchesDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">World Test Championship</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">World Cup Super League</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Photos</a></li>
+                <li><a class="dropdown-item" href="#">Mobile Apps</a></li>
+                <li><a class="dropdown-item" href="#">Careers</a></li>
+                <li><a class="dropdown-item" href="#">Contact Us</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'profile' %}">
+                <i class="bi bi-person-circle fs-1 text-primary"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-3">
+      <h1>Live Scores</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="score-card bg-white text-dark">
+            <h4>34th Match</h4>
+            <p>Chennai Super Kings 176-6 (20)</p>
+            <p>Lucknow Super Giants 180-2 (19)</p>
+            <p>LSG won by 8 wickets</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="score-card bg-white text-dark">
+            <h4>34th Match</h4>
+            <p>Delhi Capitals</p>
+            <p>Sunrisers Hyderabad</p>
+            <p>Date & Time: Apr 20, 07:30 PM LOCAL</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="score-card bg-white text-dark">
+            <h4>Series: New Zealand tour of Pakistan, 2024</h4>
+            <p>Pakistan</p>
+            <p>New Zealand</p>
+            <p>Date & Time: Apr 20, 07:30 PM LOCAL</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-md-8">
+          <!-- News card -->
+          <div class="card mb-3">
+            <img
+              src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/357400/357419.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">IPL 2024</h5>
+              <p class="card-text">
+                Thousands of fans turned up to watch CSK play at Lucknow Ekannaa
+                Stadium Only for MS
+              </p>
+              <a href="#" class="btn btn-primary">Read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <!-- Ad card -->
+          <div class="card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQyTpYnGxGalMhOB_J5KIFOKDy3uVCBvuxIfHD9yIZiQ&s"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Advertisement</h5>
+              <p class="card-text">
+                NEWS : Reece Topley's injury is not serious enough to imperil
+                his participation in the IPL 2024 for RCB.
+              </p>
+              <a href="#" class="btn btn-primary">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
